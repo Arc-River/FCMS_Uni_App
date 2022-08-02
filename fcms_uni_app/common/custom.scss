@@ -1,0 +1,27 @@
+
+$nys_theme_color: #0081ff;
+
+.nys_theme_color {
+	color: $nys_theme_color;
+}
+
+.nys_theme_bg {
+	background: $nys_theme_color;
+}
+
+.nys_theme_bg-gradual {
+	background-image: linear-gradient(45deg, $nys_theme_color, #1cbbb4);
+	color: #ffffff;
+}
+
+.nys_content {
+	width: 100vw;
+	height: auto;
+	padding: 15px 15px;
+}
+
+.nys_full_content {
+	width: 100vw;
+	height: 100vh;
+	padding: 15px 15px;
+}

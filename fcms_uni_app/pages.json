@@ -1,0 +1,194 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue",
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/tabbar/tabbar",
+      "name": "tabbar",
+      "style": {
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/login/login",
+      "name": "login",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/register/register",
+      "name": "register",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "注册"
+      }
+    },
+    {
+      "path": "pages/tabbar/index",
+      "aliasPath": "/",
+      "name": "index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/tabbar/user",
+      "name": "user",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/user/about/app-update",
+      "style": {
+        "navigationBarTitleText": "APP更新",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "background": "transparent",
+          "webviewBGTransparent": true,
+          "popGesture": "none"
+        }
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pages/home",
+      "pages": [
+        {
+          "path": "client/client",
+          "name": "client",
+          "style": {
+            "navigationBarTitleText": "客户列表",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "client/clientAdd",
+          "name": "clientAdd",
+          "style": {
+            "navigationBarTitleText": "添加",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "client/clientEdit",
+          "name": "clientEdit",
+          "style": {
+            "navigationBarTitleText": "编辑",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "client/clientDetails",
+          "name": "clientDetails",
+          "style": {
+            "navigationBarTitleText": "详情",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "notice/notice",
+          "name": "notice",
+          "style": {
+            "navigationBarTitleText": "通知",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "notice/noticeDetails",
+          "name": "noticeDetails",
+          "style": {
+            "navigationBarTitleText": "详情",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "search/search",
+          "name": "search",
+          "style": {
+            "navigationBarTitleText": "查找记录",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "statistics/statistics",
+          "name": "statistics",
+          "style": {
+            "navigationBarTitleText": "统计",
+            "enablePullDownRefresh": false
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/user",
+      "pages": [
+        {
+          "path": "about/about",
+          "name": "about",
+          "style": {
+            "navigationBarTitleText": "关于",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "setting/setting",
+          "name": "setting",
+          "style": {
+            "navigationBarTitleText": "设置",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "setting/network",
+          "name": "network",
+          "style": {
+            "navigationBarTitleText": "网络检查",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "setting/resetPassword",
+          "name": "resetPassword",
+          "style": {
+            "navigationBarTitleText": "修改密码",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "userinfo/userinfo",
+          "name": "userinfo",
+          "style": {
+            "navigationBarTitleText": "账户信息",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "userinfo/updateUserinfo",
+          "name": "updateUserinfo",
+          "style": {
+            "navigationBarTitleText": "个人信息",
+            "enablePullDownRefresh": false
+          }
+        }
+      ]
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "pageOrientation": "auto"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "fcmsuniapp",
+  "version": "1.0.0",
+  "description": "FCMS是一个人脸识别客户管理系统，助力销售人员业绩提升。",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ColorUI",
+    "uView2.0",
+    "axios"
+  ],
+  "author": "NYS",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@dcloudio/uni-ui": "^1.4.15",
+    "axios": "^0.22.0",
+    "qs": "^6.10.3",
+    "uni-read-pages": "^1.0.5",
+    "uni-simple-router": "^2.0.7",
+    "uni-ui": "^1.0.0",
+    "uview-ui": "^2.0.31",
+    "vue-i18n": "^8.26.5"
+  },
+  "id": "fcms-app",
+  "dcloudext": {
+    "category": [
+      "客户管理"
+    ]
+  },
+  "devDependencies": {
+    "@types/uni-app": "^1.4.4"
+  }
+}

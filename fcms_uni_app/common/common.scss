@@ -1,0 +1,102 @@
+/* 自定义样式公用 */
+/*当"navigationStyle":"custom"页面窗体为沉浸式，
+*参考：框架简介 - uni-app官网https://uniapp.dcloud.io/frame?id=css变量
+*/
+.status_bar {
+	height: var(--status-bar-height);
+	width: 100%;
+}
+/* 点击反馈 */
+.hover-class {
+	background-color: rgb(235, 237, 238);
+}
+/* 或者单是设置透明度 */
+.hover-opacity {
+	opacity: 0.5;
+}
+
+//自定义颜色表
+.cl {
+	&_blue {
+		color: #2256ff;
+	}
+	&_black {
+		color: #3a3d44;
+	}
+}
+
+/* 颜色值相关 */
+
+// $colorArr: black, yellow, blue, red, pink, brown, aqua, black, fuchsia, gray, green, lime, maroon, navy, olive, orange, purple, silver, teal, white, yellow;
+
+// @each $color in $colorArr {
+// 	/* 使用 bg-yellow */
+// 	.bg-#{$color} {
+// 		background-color: $color;
+// 	}
+// 	/* 使用 c-yellow */
+// 	.c-#{$color} {
+// 		color: $color;
+// 	}
+// }
+
+/* 以下样式需优化命名
+*  参考：[scss for循环样式名运算 - 简书](https://www.jianshu.com/p/7509178370d2)
+*  查看scss转css详情
+*/
+
+/* 循环遍历font-size
+*  font-size:2rpx~font-size:60rpx
+*  使用font20 font22
+ */
+@for $i from 1 through 30 {
+	.fontS#{($i * 2)} {
+		font-size: 2rpx * $i;
+	}
+}
+
+/* 循环遍历radius、zindex、opac
+*  radius:10rpx~100rpx
+*  使用radius10 radius20
+ */
+@for $ten from 1 through 10 {
+	.radius#{($ten*10)} {
+		border-radius: 10rpx * $ten !important;
+	}
+
+	.zindex#{($ten*10)} {
+		z-index: $ten !important;
+	}
+
+	.opac#{$ten} {
+		opacity: 0.1 * $ten !important;
+	}
+}
+
+/* 循环遍历width、hight
+*  width:2%~100%
+*  使用width20 hight30
+ */
+@for $j from 10 through 50 {
+	.width#{$j*2} {
+		width: 2% * $j !important;
+	}
+
+	.height#{$j*2} {
+		height: 2% * $j !important;
+	}
+}
+
+/* 循环遍历width、height
+*  width:10rpx~100rpx
+*  使用width-20 height-30
+ */
+@for $ten from 1 through 30 {
+	.width-#{($ten*10)} {
+		width: 10rpx * $ten !important;
+	}
+
+	.height-#{($ten*10)} {
+		height: 10rpx * $ten !important;
+	}
+}
